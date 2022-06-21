@@ -29,3 +29,15 @@ $(document).ready(function(){
       $('.burger__start').css('display','block')
     })
   });
+
+
+  if (mobileVersion) {
+    mobileVersion.addEventListener("click", () => {
+        const newWin = window.open("/", "example", "width=480px,height=600px");
+        newWin.onload = function () {
+            let div = newWin.document.createElement("div"),
+                body = newWin.document.body;
+            body.insertBefore(div, body.firstChild);
+        };
+    });
+}
