@@ -1,0 +1,76 @@
+// sorovnomalar_in start
+
+.sorovnomalar_in{
+    position: relative;
+    margin-bottom: 80px;
+
+    &__title__h3{
+        @include fontAll(1.125rem,700,$link);
+        line-height: 130%;
+        margin-bottom: 20px;
+        border-bottom:1px solid $link;
+        padding-bottom: 20px;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        grid-gap: 30px;
+        label{
+            @include fontAll(1rem,400,$link);
+            span{
+                @include fontAll(1.875rem,700,$link);
+                line-height: 130%;
+                margin-right: 5px;
+                text-transform: uppercase;
+            }
+
+            input{
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &__button{
+        background-color:$blue;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 18px 40px;
+        width: 100%;
+        @include fontAll(0.875rem,400,$text);
+        display: block;
+        @extend%transition;
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color:#15c6cc;
+        }
+    }
+}
+
+// sorovnomalar_in end
+
+@media (max-width:1150px){
+    .sorovnomalar_in__title__h3{
+        font-size: 1rem;
+    }
+
+    .sorovnomalar_in__item label span{
+        font-size: 1.375rem;
+    }
+
+    .sorovnomalar_in__item{
+        grid-gap: 20px;
+    }
+}
+
+
+@media (max-width:750px){
+    .sorovnomalar_in__item{
+        grid-gap: 15px;
+    }
+}

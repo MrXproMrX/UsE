@@ -1,0 +1,280 @@
+// Saylovchilar uchun eslatma start
+
+ .saylovchilar_uchun{
+    margin-bottom: 60px;
+    position: relative;
+
+    .leadership__list{
+        margin: 0 auto !important;
+    }
+
+    &__menu{
+        display: flex;
+        align-items: center;
+        grid-gap: 50px;
+        border-bottom: 1px solid $link;
+        position: relative;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        li{
+            position: relative;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__menu__link{
+        @include fontAll(1rem,400,$link);
+        line-height: 100%;
+        @extend%transition;
+
+        &:hover{
+            color:$blue;
+        }
+    }
+
+    &__active{
+        a{
+            color:$blue;
+            &::after{
+                content:"";
+                display: block;
+                width: 100%;
+                height: 6px;
+                background-color:$blue;
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+            }
+        }
+    }
+
+    &__hujjatlar{
+        .saylovchilar_uchun__hujjatlar__item + .saylovchilar_uchun__hujjatlar__item{
+            margin-top: 20px;
+        }
+    }
+
+    &__hujjatlar__item{
+        border: 1px solid #003057;
+        display: grid;
+        grid-template-columns: 230px auto;
+        align-items: center;
+        grid-gap: 30px;
+        position: relative;
+        padding-right: 20px;
+    }
+
+    &__hujjatlar__img{
+        @include fiximg(230px,100%,true);
+    }
+
+    &__hujjatlar__title{
+        @include fontAll(1.25rem,700,$link);
+        line-height: 130%;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    &__hujjatlar__text{
+        @include fontAll(1rem,400,$link);
+        line-height: 125%;
+        margin-bottom: 20px;
+    }
+
+    &__hujjatlar__link{
+        background-color:$blue;
+        padding: 18px 30px;
+        @include fontAll(0.875rem,400,$link);
+        display: inline-block;
+        @extend%transition;
+        margin-bottom: 10px;
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color:#58d2ee;
+        }
+    }
+
+    &__map{
+        iframe{
+            width: 100%;
+            height: 500px;
+        }
+    }
+
+    &__button{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    &__link{
+        background-color:$link;
+        padding: 18px 30px;
+        @include fontAll(0.875rem,400,$link);
+        display: inline-block;
+        @extend%transition;
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color:#0a416d;
+        }
+    } 
+
+    &__contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+        li{
+            padding: 20px 30px;
+            border:1px solid $link;
+
+            a+a{
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__contact__title__h2{
+        @include fontAll(1.125rem,700,$link);
+        line-height: 125%;
+        margin-bottom: 5px;
+    }
+
+    &__contact__link{
+        @include fontAll(1rem,400,$link);
+        line-height: 125%;
+        display: flex;
+        grid-gap: 10px;
+        align-items: flex-start;
+        span{
+            color:$blue;
+        }
+    }
+ }
+
+// Saylovchilar uchun eslatma end
+
+
+@media (max-width:1150px){
+    .saylovchilar_uchun__menu{
+        grid-gap: 30px;
+    }
+
+    .saylovchilar_uchun__hujjatlar__title{
+        font-size: 1.125rem;
+    }
+
+    .saylovchilar_uchun__hujjatlar__text,
+    .saylovchilar_uchun__contact__link{
+        font-size: 0.875rem;
+    }
+
+    .saylovchilar_uchun__hujjatlar__item {
+        grid-gap: 20px;
+    }
+
+    .saylovchilar_uchun__contact__title__h2{
+        font-size: 1rem;
+    }
+
+    .saylovchilar_uchun__contact li {
+        padding: 15px 20px;
+    }
+
+    .saylovchilar_uchun__contact{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .saylovchilar_uchun__map iframe{
+        height: 400px;
+    }
+}
+
+@media (max-width:800px){
+    .saylovchilar_uchun__hujjatlar__img {
+        width: 180px;
+    }
+
+    .saylovchilar_uchun__hujjatlar__item{
+        grid-template-columns: 180px auto;
+    }
+
+    .saylovchilar_uchun__hujjatlar__title{
+        font-size: 1rem;
+    }
+
+    .saylovchilar_uchun__menu {
+        grid-gap: 20px;
+    }
+
+    .saylovchilar_uchun__active a::after{
+        display: none;
+    }
+
+    .saylovchilar_uchun__menu li {
+        position: relative;
+        padding-bottom: 0px;
+    }
+
+    .saylovchilar_uchun__menu{
+        padding-bottom: 20px;
+    }
+
+    .saylovchilar_uchun__contact{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    .saylovchilar_uchun__contact li {
+        padding: 15px 15px;
+    }
+
+    .saylovchilar_uchun__map iframe{
+        height: 350px;
+    }
+}
+
+@media (max-width:550px){
+    .saylovchilar_uchun__hujjatlar__item {
+        grid-template-columns:auto;
+        justify-items: center;
+        grid-gap: 10px;
+        padding-right: 0;
+    }
+
+    .saylovchilar_uchun__menu {
+        grid-gap: 15px;
+    }
+
+    .saylovchilar_uchun__hujjatlar__img {
+        width: auto;
+        height: auto;
+    }
+
+    .saylovchilar_uchun__hujjatlar__title,
+    .saylovchilar_uchun__hujjatlar__text{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .saylovchilar_uchun__hujjatlar__link{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .saylovchilar_uchun__contact{
+        grid-template-columns:1fr;
+        grid-gap: 15px;
+    }
+
+    .saylovchilar_uchun__map iframe{
+        height: 300px;
+    }
+}

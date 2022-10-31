@@ -1,0 +1,254 @@
+// Saylov blogi start
+
+.saylov_blogi{
+    position: relative;
+    margin-bottom: 80px;
+
+    &__item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.1);
+        padding-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    &__img{
+        @include fiximg(600px,100%,true);
+        min-height: 450px;
+    }
+
+    &__data__h4{
+        @include fontAll(0.75rem,400,$blue);
+        line-height: 100%;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    &__title__h3{
+        @include fontAll(1.375rem,700,$link);
+        line-height: 130%;
+        margin-bottom: 10px;
+    }
+
+    &__taxt{
+        @include fontAll(1rem,400,$link);
+        line-height: 150%;
+        padding-right: 10px;
+        max-height: 190px;
+        overflow-y: scroll;
+    }
+
+    &__link{
+        background-color:$blue;
+        margin-top: 20px;
+        padding: 18px 30px;
+        @include fontAll(0.875rem,400,$text);
+        display: inline-block;
+        @extend%transition;
+        margin-bottom: 10px;
+        span{
+            margin-left: 5px;
+        }
+
+        &:hover{
+            background-color:#15c6cc;
+        }
+    }
+
+    &__audeo__cart{
+        position: relative;
+        width: 60px;
+        height: 60px;
+    }
+
+    &__audeo{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        li{
+            position: relative;
+            padding: 30px;
+            border:1px solid $link;
+            a{
+                display: grid;
+                width: 100%;
+                height: auto;
+                align-items: center;
+                grid-template-columns: 60px auto;
+                grid-gap: 20px;
+            }
+        }
+    }
+
+    &__audeo__title__h3{
+        @include fontAll(1.25rem,700,$link);
+        line-height: 130%;
+
+        max-height: 75px;
+        -webkit-line-clamp: 3;
+        position: relative;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+}
+
+.saylov_blogi__taxt::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.saylov_blogi__taxt::-webkit-scrollbar-track {
+    background: $max;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.saylov_blogi__taxt::-webkit-scrollbar-thumb {
+    background: $blue;
+    height: 4px;
+    border-radius: 50px;
+}
+
+.axborotnomalar{
+    &__pagination{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 20px;
+        margin-top: 60px;
+    }
+
+    &__text{
+        @include fontAll(18px,400,$link);
+        line-height: 135%;
+    }
+
+    &__pagination__start{
+        @include fontAll(1.25rem,400,$link);
+        line-height: 100%;
+        @extend%transition;
+        &:hover{
+            color:$blue;
+        }
+    }
+
+    &__pagination__item{
+        @include fontAll(1.125rem,700,$link);
+        line-height: 100%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        @extend%transition;
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        -ms-border-radius:50%;
+        -o-border-radius:50%;
+
+        &:hover{
+            color:$text;
+            background-color:$blue;
+        }
+    }
+
+    &__pagination__active{
+        color:$text;
+        background-color:$blue;
+    }
+}
+
+// Saylov blogi end
+
+
+@media (max-width:1300px){
+    .saylov_blogi__img{
+        width: 100%;
+    }
+
+    .saylov_blogi__item{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+    .saylov_blogi__audeo{
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width:1150px){
+    .saylov_blogi_in__item{
+        padding: 15px;
+        grid-gap: 10px;
+    }
+
+    .saylov_blogi__img{
+        width: 100%;
+        height: 100%;
+        min-height: 300px;
+    }
+
+    .saylov_blogi__item{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .saylov_blogi__title__h3 {
+        font-size: 1.25rem;
+    }
+
+    .saylov_blogi__audeo__title__h3{
+        font-size: 1rem;
+        max-height: 55px;
+    }
+
+    .saylov_blogi__taxt{
+        font-size: 0.875rem;
+    }
+
+    .saylov_blogi__item{
+        margin-bottom: 30px;
+    }
+
+    .saylov_blogi__audeo{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:800px){
+    .saylov_blogi__item{
+        grid-template-columns: auto;
+        padding: 0;
+        grid-gap: 10px;
+    }
+
+    .saylov_blogi__text_item{
+        padding: 15px;
+    }
+
+    .saylov_blogi__title__h3 {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width:750px){
+    .saylov_blogi__audeo{
+        grid-template-columns: 1fr;
+    }
+}

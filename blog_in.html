@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/custom1.css">
+    <title>Блог</title>
+</head>
+<body>
+
+	<!-- animation loading start -->
+
+	<div class="animation" id="loading">
+		<div class="lds-ellipsis loading-area"><div></div><div></div><div></div><div></div></div>
+	</div>
+
+	<!-- animation loading end -->
+
+	<!-- header start -->
+
+	<header>
+		<div class="header">
+			<section class="container">
+				<div class="header__cart">
+					<div class="header__text">
+						<p>Курсы иностранных</p>
+					</div>
+
+					<div class="header__accessibility__mrx">
+						<div class="header__accessibility">
+							<span class="header__accessibility__icon" id="haAccessibilityIcon">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"></path></svg>
+								Ko'zi ojizlar uchun
+							</span>
+
+							<div class="header__accessibility__dropdown ha__dropdown">
+								<div class="ha__dropdown__content">
+									<h4 class="ha__title">View:</h4>
+									<div class="custom-form-group">
+										<div class="custom-form-check">
+											<input
+												id="normalDesign"
+												name="designPatterns"
+												class="custom-form-check-input"
+												type="radio"
+												value="normalDesign"
+											/>
+											<label class="custom-form-check-label" for="normalDesign">
+												Normal design
+											</label>
+										</div>
+
+										<div class="custom-form-check">
+											<input
+												id="blackAndWhiteDesign"
+												name="designPatterns"
+												class="custom-form-check-input"
+												type="radio"
+												value="blackAndWhiteDesign"
+											/>
+											<label class="custom-form-check-label" for="blackAndWhiteDesign">
+												Black and white design
+											</label>
+										</div>
+									</div>
+
+									<h4 class="ha__title">Font size:</h4>
+									<div class="ha__btn-group">
+										<button id="fontSizeMin" class="ha_btn">A-</button>
+										<button id="fontSizeDefault" class="ha_btn">A</button>
+										<button id="fontSizeMax" class="ha_btn">A+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="mobileVersion" class="mobile-version">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M16 18H7V4h9m-4.5 18a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5m4-21h-8A2.5 2.5 0 0 0 5 3.5v17A2.5 2.5 0 0 0 7.5 23h8a2.5 2.5 0 0 0 2.5-2.5v-17A2.5 2.5 0 0 0 15.5 1z" fill="currentColor"></path></svg>
+							Mobile versiyasi
+						</div>
+					</div>
+
+					<div class="header__list">
+						<div class="header__img">
+							<a href="#!"><img src="foto/logo.png" alt="logo"></a>
+						</div>
+
+						<div class="header__item">
+							<ul class="header__menu">
+
+								<li>
+									<a href="#!" class="header__menu__link">О КОМПАНИИ</a>
+									<ul class="header__menu__none">
+										<li>
+											<a href="#!" class="header__link__none">О нас</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Вакансии</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Руководство Компании</a>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="#!" class="header__menu__link">ПРОДУКЦИЯ</a>
+									<ul class="header__menu__none">
+										<li>
+											<a href="#!" class="header__link__none">Текстильная промышленность</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Продукция зерновой промышленности</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Автомобильная промышленность </a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Сельско-хозяйственная продукция</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Сырье и материалы</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Строительные материалы</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Прочее</a>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="#!" class="header__menu__link">УСЛУГИ</a>
+									<ul class="header__menu__none">
+										<li>
+											<a href="#!" class="header__link__none">Экспорт</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Импорт</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Таможенное оформление</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Аутсорсинг</a>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="#!" class="header__menu__link">АКЦИОНЕРАМ</a>
+									<ul class="header__menu__none">
+										<li>
+											<a href="#!" class="header__link__none">Раскрытие информации</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Акционерам</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Внутренние документы общества</a>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="#!" class="header__menu__link">ЗАПРОСЫ</a>
+									<ul class="header__menu__none">
+										<li>
+											<a href="#!" class="header__link__none">ЭКСПОРТ</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">ИМПОРТ</a>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="#!" class="header__menu__link">ПРЕСС-ЦЕНТР</a>
+									<ul class="header__menu__none">
+										<li>
+											<a href="#!" class="header__link__none">Новости</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Информация ВЭД</a>
+										</li>
+
+										<li>
+											<a href="#!" class="header__link__none">Выставки</a>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="#!" class="header__menu__link">КОНТАКТЫ</a>
+								</li>
+
+							</ul>
+
+							<button class="header__from__true"><i class="fas fa-search"></i></button>
+
+							<ul class="header__language">
+								<li>
+									<a href="#!" class="header__language__link">Ru<span><i class="fas fa-angle-down"></i></span></a>
+									<ul class="header__language__none">
+										<li><a href="#!" class="header__language__none__link">Uz</a></li>
+										<li><a href="#!" class="header__language__none__link">En</a></li>
+									</ul>
+								</li>
+							</ul>
+
+							<div class="header__burger">
+								<div class="header__burger__start burger__start"><i class="fas fa-bars"></i></div>
+								<div class="header__burger__start burger__end"><i class="fas fa-times"></i></div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="header__form">
+				<section class="container">
+					<form action="#!">
+						<input type="text" class="header__form__input" placeholder="Text">
+						<button class="header__form__button"><i class="fas fa-search"></i></button>
+				  </form>
+						<button class="header__button__false"><i class="fas fa-times"></i></button>
+				</section>
+			</div>
+		</div>
+	</header>
+
+	<!-- header end -->
+
+
+	<!-- legal start -->
+
+	<div class="legal" style="background-image: url(./foto/fon.png);">
+		<section class="container">
+       <div class="legal__cart">
+				 <h2 class="legal__title__h2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+				 <ul class="legal__menu">
+					 <li><a href="#!" class="legal__menu__link">Главная</a></li>
+					 <li><span></span></li>
+					 <li><a href="#!" class="legal__menu__link">Блог</a></li>
+				 </ul>
+			 </div>
+		</section>
+	</div>
+
+	<!-- legal end -->
+
+
+    <!-- MSK yangiliklari in start -->
+
+    <div class="msk_yangiliklari_in"> 
+        <section class="container">
+            <div class="msk_yangiliklari__cart">
+
+                <div class="msk_yangiliklari_in__img">
+                    <img src="foto/saylov_blogi.png" alt="msk_yangiliklari_in">
+                </div>
+
+                <div class="msk_yangiliklari__data">
+                    <h4 class="msk_yangiliklari__title__h4">10.04.2022</h4>
+                    <h4 class="msk_yangiliklari__title__h4"><span><i class="fas fa-eye"></i></span>102</h4>
+                </div>
+
+                <div class="msk_yangiliklari_in__text clearfix">
+                    <p>
+                        Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+                        At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                        Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non.
+                    </p>
+                </div>
+
+                <div class="msk_yangiliklari_in__share">
+
+                    <div class="msk_yangiliklari_in__share__item">
+                        <ul class="msk_yangiliklari_in__menu">
+                            <li>
+                                <a href="#!" class="msk_yangiliklari_in__menu__link"><i class="fab fa-instagram"></i></a>
+                            </li>
+        
+                            <li>
+                                <a href="#!" class="msk_yangiliklari_in__menu__link"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            
+                            <li>
+                                <a href="#!" class="msk_yangiliklari_in__menu__link"><i class="fab fa-telegram-plane"></i></a>
+                            </li>
+        
+                            <li>
+                                <a href="#!" class="msk_yangiliklari_in__menu__link"><i class="fab fa-odnoklassniki"></i></a>
+                            </li>
+                        </ul>
+                        <button class="msk_yangiliklari_in__share__button">
+                            Поделиться 
+                            <span><i class="fas fa-share-square"></i></span>
+                            <span><i class="fas fa-times"></i></span>
+                        </button>
+                    </div>
+
+                    <a class="msk_yangiliklari_in__share__link" href="#!">
+                        Печать
+                        <span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="18" height="18" fill="url(#pattern0)"/>
+                                <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_4649_182" transform="scale(0.00195312)"/>
+                                </pattern>
+                                <image id="image0_4649_182" width="512" height="512" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAADdcAAA3XAUIom3gAAATzaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjItMTAtMDRUMTc6NDY6MDYrMDU6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIyLTEwLTA0VDE3OjQ2OjE5KzA1OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIyLTEwLTA0VDE3OjQ2OjE5KzA1OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1OTk5YTRiZC02YWU2LTYyNGUtYWFiMC1mNWE1N2QzMzgzODUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTk5OWE0YmQtNmFlNi02MjRlLWFhYjAtZjVhNTdkMzM4Mzg1IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6NTk5OWE0YmQtNmFlNi02MjRlLWFhYjAtZjVhNTdkMzM4Mzg1Ij4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo1OTk5YTRiZC02YWU2LTYyNGUtYWFiMC1mNWE1N2QzMzgzODUiIHN0RXZ0OndoZW49IjIwMjItMTAtMDRUMTc6NDY6MDYrMDU6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7QnjY7AAAXPUlEQVR4nO3de7BuZ13Y8e85OeEeLqkFcuQ2Q2wIgnYKxVah4g0EGiJVap1pbadVKRRHaif9Qyut1UqnQRGtBWFaprUzYr1gCCC0M0atjhahRhEh5WQGS0m4xBATLoEk7P6xQm6ck7PP2e9+n7XP8/nM7H9yzn73b3aeWc/3rPW+ax3a2dkJAJjL4dED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"/>
+                                </defs>
+                            </svg>                                
+                        </span>
+                    </a>
+
+                </div>
+
+                <form action="#!" class="msk_yangiliklari_in__form">
+                    <label>
+                        <span>Ваше имя</span>
+                        <input class="msk_yangiliklari_in__input" type="text">
+                    </label>
+                    <label>
+                        <span>Комментарий</span>
+                        <textarea class="msk_yangiliklari_in__textarea"></textarea> 
+                    </label>
+                    <button class="msk_yangiliklari_in__button" type="submit">Отправить</button>
+                </form>
+
+                <ul class="msk_yangiliklari_in__commint">
+                    <li>
+                        <h3 class="msk_yangiliklari_in__title__h3">John Doe</h3>
+                        <div class="msk_yangiliklari_in__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <h3 class="msk_yangiliklari_in__title__h3">Bruce Wayne</h3>
+                        <div class="msk_yangiliklari_in__text">
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- MSK yangiliklari in end -->
+
+	
+	<!-- footer start -->
+
+	<footer>
+		<div class="footer">
+			<section class="container">
+				<div class="footer__cart">
+
+					<div class="footer__logo">
+						<img src="foto/logo2.png" alt="logo">
+					</div>
+
+          <div class="footer__list">
+						<ul>
+							<li><a href="#!" class="footer__menu__link">AО UZSANOATEXPORT</a></li>
+							<li><a href="#!" class="footer__menu__link">ПРЕСС-ЦЕНТР</a></li>
+							<li><a href="#!" class="footer__menu__link">АКЦИОНЕРАМ</a></li>
+							<li><a href="#!" class="footer__menu__link">КОНТАКТЫ</a></li>
+							<li><a href="#!" class="footer__menu__link">УСЛУГИ</a></li>
+						</ul>
+
+						<ul class="footer__menu">
+							<li><a href="#!" class="footer__menu__link">ПРОДУКЦИЯ</a>
+							   <ul>
+									 <li><a href="#!" class="footer__link__menu">Текстильная промышленность</a></li>
+									 <li><a href="#!" class="footer__link__menu">Продукция зерновой промышленности</a></li>
+									 <li><a href="#!" class="footer__link__menu">Автомобильная промышленность</a></li>
+									 <li><a href="#!" class="footer__link__menu">Сельско-хозяйственная продукция</a></li>
+									 <li><a href="#!" class="footer__link__menu">Сырье и материалы</a></li>
+									 <li><a href="#!" class="footer__link__menu">Строительные материалы</a></li>
+									 <li><a href="#!" class="footer__link__menu">Прочее</a></li>
+								 </ul>
+							</li>
+							<li><a href="#!" class="footer__menu__link">ЗАПРОСЫ</a>
+							   <ul>
+									<li><a href="#!" class="footer__link__menu">ИМПОРТ</a></li>
+									<li><a href="#!" class="footer__link__menu">ЭКСПОРТ</a></li>
+								 </ul>
+							</li>
+						</ul>
+
+						<div>
+							<ul class="footer__network">
+								<li>
+									<a class="footer__network__link"><span><i class="fas fa-map-marker-alt"></i></span>Мустакиллик 107, Ташкент, Узбекистан</a>
+								</li>
+								<li>
+									<a href="tel:+998712094848" class="footer__network__link"><span><i class="fas fa-phone-alt"></i></span>+998712094848</a>
+								</li>
+								<li>
+									<a href="mailto:sales@use.uz" class="footer__network__link"><span><i class="fas fa-envelope"></i></span>sales@use.uz</a>
+								</li>
+							</ul>
+
+							<ul class="footer__network__menu">
+								<li>
+									<a href="#!" class="footer__network__menu__link">
+										<img src="foto/youtube.png" alt="link">
+									</a>
+								</li>
+
+								<li>
+									<a href="#!" class="footer__network__menu__link">
+										<img src="foto/Facebook.png" alt="link">
+									</a>
+								</li>
+
+								<li>
+									<a href="#!" class="footer__network__menu__link">
+										<img src="foto/teligram.png" alt="link">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__item">
+					 <a class="footer__item__link">“AО UZSANOATEXPORT” Все права защищены</a>
+					 <a class="footer__item__link">© Copyright 2020 - Web developed by SOS Group</a>
+				</div>
+			</section>
+		</div>
+	</footer>
+
+	<!-- footer end -->
+
+	<div id="highlightMenu" class="highlight-menu">
+		<!-- <span id="highlight_share" class="highlight-menu__item disabled">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"></path></svg>
+		</span> -->
+		<span id="highlight_textToSpeech" class="highlight-menu__item">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.84-5 6.7v2.07c4-.91 7-4.49 7-8.77c0-4.28-3-7.86-7-8.77M16.5 12c0-1.77-1-3.29-2.5-4.03V16c1.5-.71 2.5-2.24 2.5-4M3 9v6h4l5 5V4L7 9H3Z"></path></svg>
+		</span>
+		<span id="highlight_resetTextToSpeech" class="highlight-menu__item">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4L9.91 6.09L12 8.18M4.27 3L3 4.27L7.73 9H3v6h4l5 5v-6.73l4.25 4.26c-.67.51-1.42.93-2.25 1.17v2.07c1.38-.32 2.63-.95 3.68-1.81L19.73 21L21 19.73l-9-9M19 12c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.916 8.916 0 0 0 21 12c0-4.28-3-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71m-2.5 0c0-1.77-1-3.29-2.5-4.03v2.21l2.45 2.45c.05-.2.05-.42.05-.63Z"></path></svg>
+		</span>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<script src="js/index.js"></script>
+<script src="js/fancyappsGallry.js"></script>
+<script src="js/video.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/visuallyImpaired.js"></script>
+</body>
+</html>
