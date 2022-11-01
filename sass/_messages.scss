@@ -5,13 +5,13 @@
     margin-bottom: 80px;
 
     &__title{
-        @include fontAll(30px,700,$link);
+        @include fontAll(1.875rem,700,$link);
         line-height: 120%;
         text-transform: uppercase;
     }
 
     &__text{
-        @include fontAll(18px,500,$link);
+        @include fontAll(1.125rem,500,$link);
         line-height: 30px;
         margin-top: 30px;
     }
@@ -22,11 +22,11 @@
 
 @media (max-width:1000px){
     .messages__title {
-        font-size: 26px;
+        font-size: 1.625rem;
     }
 
     .messages__text {
-        font-size: 16px;
+        font-size: 1rem;
         margin-top: 20px;
     }
 }
@@ -34,7 +34,7 @@
 
 @media (max-width:700px){
     .messages__title {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .messages__text {
@@ -44,12 +44,12 @@
 
 @media (max-width:500px){
     .messages__title {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 }
 
 @media (max-width:400px){
     .messages__title {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }

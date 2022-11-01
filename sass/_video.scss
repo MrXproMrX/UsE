@@ -45,12 +45,12 @@
     }
 
     &__title__h3{
-        @include fontAll(18px,600,$link);
+        @include fontAll(1.125rem,600,$link);
         line-height: 22px;
     }
 
     &__list__title__h3{
-        @include fontAll(18px,500,$text);
+        @include fontAll(1.125rem,500,$text);
         text-transform: uppercase;
         line-height: 22px;
         position: absolute;
@@ -109,7 +109,7 @@
 
     .video__title__h3,
     .video__list__title__h3{
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 

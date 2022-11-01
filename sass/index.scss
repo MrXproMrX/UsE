@@ -22,7 +22,6 @@ body{
     position: relative;
 }
 
-
 .animation{
     position: fixed;
     top: 0;
@@ -41,7 +40,7 @@ body{
 
     &__text{
         padding: 12px;
-        @include fontAll(16px,400,$link);
+        @include fontAll(1rem,400,$link);
         line-height: 100%;
         text-align: right;
     }
@@ -72,7 +71,7 @@ body{
     }
 
     &__menu__link{
-        @include fontAll(14px,500,$link);
+        @include fontAll(0.875rem,500,$link);
         text-transform: uppercase;
         line-height: 100%;
     }
@@ -95,7 +94,7 @@ body{
     }
 
     &__link__none{
-        @include fontAll(14px,500,#a6a6a6);
+        @include fontAll(0.875rem,500,#a6a6a6);
         line-height: 120%;
         display:block;
         padding: 10px 15px;
@@ -115,7 +114,7 @@ body{
         width: 34px;
         height: 34px;
         background-color: $link;
-        @include fontAll(15px,500,$text);
+        @include fontAll(0.9375rem,500,$text);
         text-align: center;
     }
 
@@ -127,7 +126,7 @@ body{
     }
 
     &__language__link{
-        @include fontAll(14px,500,$link);
+        @include fontAll(0.875rem,500,$link);
         display: flex;
         align-items:center;
         line-height: 100%;
@@ -195,7 +194,7 @@ body{
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
-        @include fontAll(20px,600,$text);
+        @include fontAll(1.25rem,600,$text);
         line-height: 100%;
         background-color:$link;
 }
@@ -209,7 +208,7 @@ body{
         -moz-border-radius: 50px;
         -ms-border-radius: 50px;
         -o-border-radius: 50px;
-        @include fontAll(18px,600,$text);
+        @include fontAll(1.125rem,600,$text);
         line-height: 100%;
         margin-left: -40px;
         background-color:$link;
@@ -227,10 +226,10 @@ body{
         -ms-border-radius:50px;
         -o-border-radius:50px;
         padding: 10px 30px;
-        @include fontAll(14px,600,$link);
+        @include fontAll(0.875rem,600,$link);
         line-height: 100%;
         &::placeholder{
-            @include fontAll(14px,600,$link);
+            @include fontAll(0.875rem,600,$link);
             line-height: 100%;
         }
     }  
@@ -239,7 +238,7 @@ body{
         width: 20px;
         height: 20px;
         text-align: center;
-        @include fontAll(18px,600,$link);
+        @include fontAll(1.125rem,600,$link);
         line-height: 100%; 
     }
 }
@@ -287,7 +286,7 @@ body{
 
 
     &__title__h2{
-        @include fontAll(48px,700,$text);
+        @include fontAll(3rem,700,$text);
         line-height: 120%;
     }
 
@@ -327,7 +326,7 @@ body{
     }
 
     &__menu__link{
-        @include fontAll(18px,500,$text);
+        @include fontAll(1.125rem,500,$text);
         line-height: 22px;
         text-transform: uppercase;
     }
@@ -353,7 +352,7 @@ body{
             align-items:center;
             span{
                 margin-left: 10px;
-                @include fontAll(18px,400,$link);
+                @include fontAll(1.125rem,400,$link);
                 line-height: 100%;
             }
 
@@ -366,7 +365,7 @@ body{
     }
 
     &__title__h3{
-        @include fontAll(18px,400,$link);
+        @include fontAll(1.125rem,400,$link);
         padding-bottom: 5px;
         line-height: 100%;
     }
@@ -379,7 +378,7 @@ body{
         padding: 10px 20px;
         outline: none;
         margin-bottom: 15px;
-        @include fontAll(16px,400,$link);
+        @include fontAll(1rem,400,$link);
     }
 
     &__textarea{
@@ -390,7 +389,7 @@ body{
         padding: 10px 20px;
         outline: none;
         margin-bottom: 15px;
-        @include fontAll(16px,400,$link);
+        @include fontAll(1rem,400,$link);
         resize: none;
     }
 
@@ -398,10 +397,65 @@ body{
         width: 100%;
         height: 50px;
         background-color:$blue;
-        @include fontAll(18px,400,$text);
+        @include fontAll(1.125rem,400,$text);
         line-height: 100%;
         text-align: center;
         margin-top: 10px;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: auto 360px;
+        grid-gap: 50px;
+    }
+
+    &__title__h4{
+        @include fontAll(1.875rem,700,$link);
+        line-height: 120%;
+        margin-bottom: 5px;
+    }
+
+    &__text{
+        @include fontAll(1rem,400,$link);
+        line-height: 125%;
+        margin-bottom: 5px;
+    }
+
+    &__title__h5{
+        @include fontAll(1.125rem,500,$blue);
+        line-height: 125%;
+        text-transform: uppercase;
+    }
+
+    &__cart__item{
+        background: #FFFFFF;
+        box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: auto;
+        padding: 25px 30px;
+    }
+
+    &__item__text{
+        @include fontAll(1rem,400,$link);
+        line-height: 125%;
+        margin-bottom: 5px;
+    }
+
+    &__cart{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__item__title__h2{
+        @include fontAll(1.875rem,700,$link);
+        line-height: 125%;
+        text-transform: uppercase;
+        span{
+            font-size: 70%;
+        }
     }
 }
 
@@ -444,7 +498,7 @@ body{
     }
 
     &__menu__link{
-        @include fontAll(14px,500,#a6a6a6);
+        @include fontAll(0.875rem,500,#a6a6a6);
         display: inline-block;
         margin-bottom: 15px;
         @extend%transition;
@@ -461,7 +515,7 @@ body{
     }
 
     &__link__menu{
-        @include fontAll(14px,500,#a6a6a6);
+        @include fontAll(0.875rem,500,#a6a6a6);
         display: inline-block;
         margin-bottom: 10px;
     }
@@ -473,7 +527,7 @@ body{
     }
 
     &__network__link{
-        @include fontAll(18px,400,#2e2d2c);
+        @include fontAll(1.125rem,400,#2e2d2c);
         line-height: 120%;
         span{
             color:#a6a6a6;
@@ -498,7 +552,7 @@ body{
     }
 
     &__item__link{
-        @include fontAll(14px,500,#a6a6a6);
+        @include fontAll(0.875rem,500,#a6a6a6);
         line-height: 120%;
         display: block;
         text-align: center;
@@ -544,11 +598,20 @@ body{
     }
 
     .legal__title__h2 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .header__burger{
         display: block;
+    }
+
+    .legal_form__list{
+        grid-gap: 30px;
+    }
+
+    .legal_form__title__h4,
+    .legal_form__item__title__h2{
+        font-size: 1.625rem;
     }
 }
 
@@ -557,7 +620,7 @@ body{
     .legal_form__item label span,
     .legal_form__title__h3,
     .legal__menu__link {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .legal_form__item label input {
@@ -566,7 +629,7 @@ body{
     }
 
     .legal__title__h2 {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .legal__menu li span {
@@ -606,12 +669,16 @@ body{
     .footer__list {
         padding-top: 50px;
     }
+
+    .legal_form__list{
+        grid-template-columns: 1fr;
+    }
 }
 
 
 @media (max-width:700px){
     .legal__title__h2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .legal__menu {
@@ -621,7 +688,7 @@ body{
     .legal_form__item label span,
     .legal_form__title__h3,
     .legal__menu__link {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .legal_form__input {
@@ -634,11 +701,19 @@ body{
 
     .legal_form__button {
         height: 40px;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .header__menu {
         width: 80%;
+    }
+
+    .legal_form__title__h4, .legal_form__item__title__h2 {
+        font-size: 1.375rem;
+    }
+
+    .legal_form__cart__item{
+        padding: 15px 20px;
     }
 }
 
@@ -692,7 +767,7 @@ body{
     }
 
     .legal__title__h2 {
-        font-size: 26px;
+        font-size: 1.625rem;
     }
 
     .header__button__false {
@@ -708,7 +783,7 @@ body{
     }
 
     .legal__title__h2 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .legal {

@@ -12,7 +12,7 @@
     }
 
     &__link__menu{
-        @include fontAll(20px,600,$link);
+        @include fontAll(1.25rem,600,$link);
         line-height: 120%;
     }
 }
@@ -29,14 +29,14 @@
 
 @media (max-width:1000px){
     .results__link__menu {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 
 
 @media (max-width:700px){
     .results__link__menu {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .results__item + .results__item{
@@ -52,7 +52,7 @@
 
 @media (max-width:700px){
     .results__link__menu {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .results__item + .results__item{
